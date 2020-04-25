@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="header_inner">
+            <div id="header_inner-top">
+                <div id="logo">
+                    <img src="images/logo.png" alt="" title="" />
+                </div>
+                <div id="account">
+                    <div id="button_login">
+                        <img src="images/normal.png" width="113" height="38" 
+                            onmouseover="this.src='images/hover.png'; this.width=113;this.height=38;" 
+                            onmouseout="this.src='images/normal.png'; this.width=113;this.height=38;"
+                        />
+                    </div>
+                    <input id="login" class="login_input" type="text" value="" />
+                    <p id="button_logout">Выйти</p>
+                </div>
+            </div>
+            <div id="header_inner-bottom">
+                <input id="search_input" type="text" value="" placeholder="Поиск..." />
+                <p id="search_button">Найти</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main_inner">
+            <div id="switch">
+                <p id="films_button" class="toggle_switch">Фильмы</p>
+                <p id="channels_button">Телеканалы</p>
+            </div>
+            <div id="films">
+                <div id="pictures_title">
+                    <img src="images/Новинки.png" alt="" title="" />
+                </div>
+                <div id="pictures">
+                    <div class="picture">
+                        <img class="picture_cover" src="images/picture_1.png" alt="что-нибудь 1" title="" />
+                        <div class="picture_title">Мульт в кино. Выпуск №103. Некогда грустить!</div>
+                    </div>
+                    <div class="picture">
+                        <img class="picture_cover" src="images/picture_2.png" alt="ченить два" title="" />
+                        <p class="picture_title">Новый Бэтмен</p>
+                    </div>
+                    <div class="picture">
+                        <img class="picture_cover" src="images/picture_3.png" alt="Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии." title="" />
+                        <p class="picture_title">Однажды... в Голливуде</p>
+                    </div>
+                    <div class="picture">
+                        <img class="picture_cover" src="images/picture_4.png" alt="азаза" title="" />
+                        <p class="picture_title">Стриптизёрши</p>
+                    </div>
+                </div>
+                <div id="genres_title">Жанры</div>
+                <div id="genres">
+                    <div id="genre_1" class="genre">
+                        <img class="genre_img" src="images/1.png" alt="" title="" />
+                        <p class="genre_title">Комедии</p>
+                    </div>
+                    <div id="genre_2" class="genre">
+                        <img class="genre_img" src="images/2.png" alt="" title="" />
+                        <p class="genre_title">Драмы</p>
+                    </div>
+                    <div id="genre_3" class="genre">
+                        <img class="genre_img" src="images/3.png" alt="" title="" />
+                        <p class="genre_title">Фантастика</p>
+                    </div>
+                    <div id="genre_4" class="genre">
+                        <img class="genre_img" src="images/4.png" alt="" title="" />
+                        <p class="genre_title">Ужасы</p>
+                    </div>
+                </div>
+            </div>
+            <div id="channels">
+                <div class="channel">
+                    <div class="channel_logo">
+                        <img src="images/logo_1.png" alt="" title="" />
+                    </div>
+                    <div class="channel_program">
+                        <p><b>Первый канал</b></p>
+                        <p class="red">13:00&emsp;Новости (с субтитрами)</p>
+                        <p>14:00&emsp;Давай поженимся</p>
+                        <p>15:00&emsp;Другие новости</p>
+                    </div>
+                </div>
+                <div class="channel">
+                    <div class="channel_logo">
+                        <img src="images/logo_2.png" alt="" title="" />
+                    </div>
+                    <div class="channel_program">
+                        <p><b>2x2</b></p>
+                        <p class="red">13:00&emsp;МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                        <p>14:00&emsp;ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                        <p>15:00&emsp;БУРДАШЕВ. Сезон 1, 20 серия</p>
+                    </div>
+                </div>
+                <div class="channel">
+                    <div class="channel_logo">
+                        <img src="images/logo_3.png" alt="" title="" />
+                    </div>
+                    <div class="channel_program">
+                        <p><b>РБК</b></p>
+                        <p class="red">13:00&emsp;ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                        <p>14:00&emsp;ДЕНЬ. Главные темы</p>
+                        <p>15:00&emsp;Главные новости</p>
+                    </div>
+                </div>
+                <div class="channel">
+                    <div class="channel_logo">
+                        <img src="images/logo_4.png" alt="" title="" />
+                    </div>
+                    <div class="channel_program">
+                        <p><b>AMEDIA PREMIUM</b></p>
+                        <p class="red">13:00&emsp;Клиент всегда мёртв</p>
+                        <p>14:00&emsp;Голодные игры: Сойка-пересмешница. Часть I</p>
+                        <p>15:00&emsp;Секс в большом городе</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="shadow"></div>
+    <div id="modal">
+        <div id="modal_inner">
+            <div>
+                <div id="modal_inner-title">Вход</div>
+                <input type="text" id="modal_inner-login" value="" placeholder="Логин">
+                <input type="password" id="modal_inner-password" value="" placeholder="Пароль">
+                <label id="modal_inner-checkbox">
+                    <img class="checkbox_no" src="images/no.png"><img class="checkbox_yes" src="images/yes.png">
+                    <input type="checkbox" value="">
+                </label>
+            </div>
+            <div id="modal_inner-button">
+                <img src="images/normal.png" onmouseover="this.src='images/hover.png'; this.width=113;this.height=38;" onmouseout="this.src='images/normal.png'; this.width=113;this.height=38;" width="113" height="38">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="footer_inner">
+            <div id="footer_logo">
+                <a href="https://htc-cs.ru/" target="_blank">
+                    <img src="images/htc-cs-logo.png" alt="" title="" />
+                </a>
+            </div>
+            <div id="footer_info">
+                <div id="footer_info-top">
+                    <p>426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+                    <p>+7 (3412) 93-88-61, 43-29-29</p>
+                </div>
+                <a href="https://htc-cs.ru/" target="_blank">htc-cs.ru</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
